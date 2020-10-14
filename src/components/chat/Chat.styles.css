@@ -1,0 +1,71 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 0.75;
+    background-color: #363a3f;
+    height: 100vh;
+}
+
+/* CHAT HISTORY SECTION */
+.chat__messages {
+    flex: 1;
+}
+
+/* SEND MESSAGE TEXTAREA SECTION */
+.chat__input {
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px;
+    border-top: 1px solid gray;
+    border-radius: 10px;
+    background-color: #474b53;
+}
+
+.chat__input > .MuiSvgIcon-root {
+    margin-right: 5px;
+}
+
+.chat__input > form {
+    flex: 1;
+    display: flex;
+}
+
+.chat__input > form > textarea {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    /* border: 1px solid gray;
+    border-radius: 20px; */
+    outline-width: 0;
+    color: white;
+    font-size: large;
+    width: 100%;
+
+    /* min-height: 50px; */
+    max-height: 100px;
+    /* box-sizing: border-box; */
+    /* direction: ltr; */
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+    /* white-space: pre-wrap;
+    word-wrap: break-word; */
+    resize: none;
+}
+
+/* Ask all browsers to keep the scroll functionality but do not show it */
+.chat__input > form > textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.chat__inputButton {
+    display: none;
+}
+
+.chat__inputIcons > .MuiSvgIcon-root {
+    padding: 5px;
+    cursor: pointer;
+}
+

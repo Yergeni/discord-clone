@@ -1,0 +1,38 @@
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.message__info {
+    margin-left: 20px;
+}
+
+.message__timestamp {
+    color: gray;
+    margin-left: 20px;
+    font-size: x-small;
+}
+
+/* .message_removeIcon {
+    color: grey;
+    cursor: pointer;
+    right: 20px;
+    margin-right: auto;
+    float: right;
+    justify-content: flex-end;
+}
+
+.message_removeIcon > .MuiSvgIcon-root {
+    position: absolute;
+    text-align: right;
+    margin-right: auto;
+    float: right;
+    justify-content: flex-end;
+}
+
+.message_removeIcon:hover {
+    color: white;
+} */
