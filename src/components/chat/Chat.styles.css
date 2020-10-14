@@ -9,6 +9,17 @@
 /* CHAT HISTORY SECTION */
 .chat__messages {
     flex: 1;
+    overflow: scroll;
+}
+
+/* Hide Scroolbar for Browsers */
+.chat__messages::-webkit-scrollbar {
+    display: none;
+}
+
+.chat__messages {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 /* SEND MESSAGE TEXTAREA SECTION */
@@ -43,6 +54,7 @@
     color: white;
     font-size: large;
     width: 100%;
+    /* overflow: visible; */
 
     /* min-height: 50px; */
     max-height: 100px;
