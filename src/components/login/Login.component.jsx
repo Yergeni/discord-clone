@@ -3,6 +3,8 @@ import { signInWithGoogle } from "../../firebase/firebase.conf";
 
 import { Button } from "@material-ui/core";
 
+import DiscordLogo from '../../assets/discord-logo-2015.png'
+
 import "./Login.styles.css";
 
 const Login = () => {
@@ -17,7 +19,8 @@ const Login = () => {
 		<div className="login">
 			<div className="login__logo">
 				<img
-					src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/98/Discord_logo.svg/800px-Discord_logo.svg.png"
+					src={DiscordLogo}
+					// src={process.env.PUBLIC_URL + '/discord-logo-2015.png'}
 					alt="Discord Logo"
 				/>
 			</div>
